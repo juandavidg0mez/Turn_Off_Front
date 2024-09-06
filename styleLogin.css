@@ -1,0 +1,22 @@
+#extraInfo {
+    display: none; /* El div está oculto por defecto */
+}
+html, body {
+    height: 100%;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.box {
+    width: 100%;
+    max-width: 400px;
+}
+#login_Log{
+    display: block;
+}
+.visibile{
+    display: block;
+}
