@@ -1,23 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+    <title>Login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css">
+
+    <link rel="stylesheet" href="styleLogin.css">
+
 <body>
-    <div class="field">
-        <label class="label">Name</label>
-        <div class="control">
-          <input class="input" type="text" placeholder="e.g Alex Smith">
+    <section class="hero is-link">
+        <div class="hero-body">
+            <div class="container">
+                <!-- login -->
+                <div class="box" id="login_Log">
+                    <form id="loginForm">
+
+                        <h1 class="title has-text-centered">Login</h1>
+                        <div class="field">
+                            <label class="label">Username</label>
+                            <div class="control">
+                                <input class="input" type="text" placeholder="Username" autocomplete="username">
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="label">Password</label>
+                            <div class="control">
+                                <input class="input" type="password" placeholder="Password"
+                                    autocomplete="current-password">
+                            </div>
+                        </div>
+
+                        <div class="field is-grouped is-grouped-centered">
+                            <p class="control">
+                                <button class="button is-success is-fullwidth" id="loginBtn">
+                                    Login
+                                </button>
+                            </p>
+                            <p class="control">
+                                <a class="button is-light" id="registerBtn">
+                                    Register
+                                </a>
+                            </p>
+                            <p class="control">
+                                <a class="button is-light">
+                                    Gosht
+                                </a>
+                            </p>
+
+                        </div>
+
+
+                    </form>
+                </div>
+
+
+                <!-- registration -->
+                <div id="extraInfo" class="notification is-info has-background-danger">
+                    <form id="registerForm">
+                        <div class="field">
+                            <label class="label">First Name</label>
+                            <div class="control">
+                                <input class="input" type="text" placeholder="First Name">
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="label">Last Name</label>
+                            <div class="control">
+                                <input class="input" type="text" placeholder="Last Name">
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="label">Username</label>
+                            <div class="control">
+                                <input class="input" type="text" placeholder="Username" autocomplete="username">
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="label">Country</label>
+                            <div class="control">
+                                <input class="input" type="text" placeholder="Country">
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="label">Password</label>
+                            <div class="control">
+                                <input class="input" type="password" placeholder="Password" autocomplete="current-password">
+                            </div>
+                        </div>
+                        <div class="field is-grouped is-grouped-centered">
+                            <div class="control">
+                                <button class="button has-background-warning" id="registerSubmitBtn">Submit</button>
+                            </div>
+                            <div class="control">
+                                <button class="button has-background-black" id="close_div_register">Cancel</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+
+
         </div>
-      </div>
-      
-      <div class="field">
-        <label class="label">Email</label>
-        <div class="control">
-          <input class="input" type="email" placeholder="e.g. alexsmith@gmail.com">
-        </div>
-      </div>
+    </section>
+
+    <!-- Bulma y FontAwesome -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="Long_in.js"></script>
 </body>
+
 </html>
